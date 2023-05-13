@@ -9,29 +9,87 @@
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="183dp"
-        android:layout_height="74dp"
-        android:layout_marginStart="104dp"
-        android:layout_marginTop="192dp"
-        android:layout_marginEnd="125dp"
-        android:layout_marginBottom="465dp"
+        android:layout_width="153dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="131dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginBottom="10dp"
         android:text="Stone Paper Scissors"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/imageView12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="183dp"
-        android:layout_height="74dp"
-        android:layout_marginStart="104dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="124dp"
-        android:text="Tic Tac Toe"
+        android:layout_width="169dp"
+        android:layout_height="58dp"
 
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="45dp"
+        android:text="Tic Tac Toe"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button1" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="109dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/button1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:srcCompat="@drawable/titlespc" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="162dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1"
+        app:srcCompat="@drawable/tictaktoeba" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="157dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="22dp"
+        android:text="Flying Fish"
+        app:layout_constraintBottom_toTopOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="127dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="37dp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/flappyfishheading" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
