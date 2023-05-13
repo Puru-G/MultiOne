@@ -22,7 +22,7 @@ public class splash_screen extends AppCompatActivity {
                     e.printStackTrace();
                 }
                 finally {
-                    Intent mainIntent = new Intent(splash_screen.this, MainActivity.class);
+                    Intent mainIntent = new Intent(splash_screen.this, FlappyFish.class);
                     startActivity(mainIntent);
                 }
             }
