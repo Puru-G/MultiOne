@@ -122,7 +122,7 @@
         android:id="@+id/button"
         android:layout_width="129dp"
         android:layout_height="65dp"
-        android:background="@color/black"
+        android:background="@drawable/background"
         android:onClick="reset"
         android:text="Reset"
         app:layout_constraintBottom_toTopOf="@+id/gridLayout"
@@ -154,10 +154,28 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="108dp"
         android:layout_marginBottom="45dp"
-        android:text="Home"
+        android:background="@drawable/background"
 
+        android:text="Home"
         app:layout_constraintBottom_toTopOf="@+id/gridLayout"
         app:layout_constraintEnd_toStartOf="@+id/button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="273dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/background"
+        android:text="   Please start the game"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
 </androidx.constraintlayout.widget.ConstraintLayout>

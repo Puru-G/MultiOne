@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class TTT extends AppCompatActivity {
@@ -28,18 +29,33 @@ public class TTT extends AppCompatActivity {
             if (player == 1) {
                 v.setImageResource(R.drawable.cross);
                 gameState[tag] = player;
-                Toast.makeText(this, tag + " Cross", Toast.LENGTH_SHORT).show();
+
+
+               // Toast.makeText(this, tag + " Cross", Toast.LENGTH_SHORT).show();
+                TextView text = (TextView) findViewById(R.id.textView) ;
+                text.setText("      Cross at position "+tag);
+
                 player = 0; // Player 2
             } else {
                 v.setImageResource(R.drawable.circle);
                 gameState[tag] = player;
-                Toast.makeText(this, tag + " Circle", Toast.LENGTH_SHORT).show();
+
+
+                //Toast.makeText(this, tag + " Circle", Toast.LENGTH_SHORT).show();
+                TextView text = (TextView) findViewById(R.id.textView) ;
+                text.setText("     Circle at position "+tag);
+
                 player = 1;
             }
 
             for (int i = 0; i < winningStates.length; i++) {
                 if (gameState[winningStates[i][0]] == gameState[winningStates[i][1]] && gameState[winningStates[i][1]] == gameState[winningStates[i][2]] && gameState[winningStates[i][0]] > -1) {
-                    Toast.makeText(this, "Winner is player " + (player == 0 ? 1 : 0), Toast.LENGTH_SHORT).show();
+
+
+                    //Toast.makeText(this, "Winner is player " + (player == 0 ? 1 : 0), Toast.LENGTH_SHORT).show();
+                    TextView text = (TextView) findViewById(R.id.textView) ;
+                    text.setText("   Winner is player"+ (player == 0 ? 1 : 0));
+
                     isWinner = true;
                 }
 
@@ -59,6 +75,8 @@ public class TTT extends AppCompatActivity {
 
 
         }
+        TextView text = (TextView) findViewById(R.id.textView) ;
+        text.setText("    Please start the game");
         isWinner = false;
         imageClicked = -1;
         player = 1;
