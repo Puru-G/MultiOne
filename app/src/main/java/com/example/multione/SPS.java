@@ -51,42 +51,51 @@ public class SPS extends AppCompatActivity {
                 ImageView result = findViewById(R.id.imageView1);
                 result.setImageResource(R.drawable.tryss);
 
-                /*TextView text=(TextView) findViewById(R.id.textviewsps);
-                text.setText("TIE GAME");*/
-                Toast.makeText(this, "TIE GAME", Toast.LENGTH_SHORT).show();
+
+                //Toast.makeText(this, "TIE GAME", Toast.LENGTH_SHORT).show();  textView3
+                TextView text = (TextView) findViewById(R.id.textView3) ;
+                text.setText(" TIE GAME");
+
                 score=score+5;
 
             } else if (x < y) {
                 ImageView result = findViewById(R.id.imageView1);
                 result.setImageResource(R.drawable.lose);
-                Toast.makeText(this, "COMPUTER WIN THE GAME", Toast.LENGTH_SHORT).show();
-                /*TextView text=(TextView) findViewById(R.id.textviewsps);
-                text.setText("COMPUTER WIN THE GAME");*/
+
+
+                //Toast.makeText(this, "COMPUTER WIN THE GAME", Toast.LENGTH_SHORT).show();
+                TextView text = (TextView) findViewById(R.id.textView3) ;
+                text.setText("COMPUTER WIN THE GAME ");
+
                 score=score-10;
             } else {
                 ImageView result = findViewById(R.id.imageView1);
                 result.setImageResource(R.drawable.win);
-                Toast.makeText(this, "HUMAN WIN THE GAME", Toast.LENGTH_SHORT).show();
-                /*TextView text=(TextView) findViewById(R.id.textviewsps);
-                text.setText("HUMAN WIN THE GAME");*/
+
+
+                //Toast.makeText(this, "HUMAN WIN THE GAME", Toast.LENGTH_SHORT).show();
+                TextView text = (TextView) findViewById(R.id.textView3) ;
+                text.setText("HUMAN WIN THE GAME ");
                 score=score+10;
             }
 
         }
         else {
-            //Toast.makeText(this, "YOUR SCORE :- "+score, Toast.LENGTH_SHORT).show();
-            Toast.makeText(this, " GAME OVER", Toast.LENGTH_LONG).show();
-            /* ImageView gameover = findViewById(R.id.imageView1);
-               gameover.setImageResource(R.drawable.gameover);*/
-            /*TextView text=(TextView) findViewById(R.id.textviewsps);
-            text.setText(" GAME OVER");*/
+
+            //Toast.makeText(this, " GAME OVER", Toast.LENGTH_LONG).show();
+            TextView text = (TextView) findViewById(R.id.textView3) ;
+            text.setText("GAME OVER ");
+
         }
         if (count==3)
         {
+            /*
             Toast.makeText(this, "YOUR SCORE :-"+score, Toast.LENGTH_LONG).show();
-            Toast.makeText(this, "GAME OVER", Toast.LENGTH_SHORT).show();
-           /* TextView text=(TextView) findViewById(R.id.textviewsps);
-            text.setText(" YOUR SCORE :  "+score+"  GAME OVER");*/
+            Toast.makeText(this, "GAME OVER", Toast.LENGTH_SHORT).show();*/
+
+            TextView text = (TextView) findViewById(R.id.textView3) ;
+            text.setText("YOUR SCORE :"+score+"             GAME OVER");
+
             ImageView gameover = findViewById(R.id.imageView1);
             gameover.setImageResource(R.drawable.gameover);
         }
@@ -121,31 +130,43 @@ public class SPS extends AppCompatActivity {
             if (x == y) {
                 ImageView result = findViewById(R.id.imageView1);
                 result.setImageResource(R.drawable.tryss);
-                Toast.makeText(this, "TIE GAME", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "TIE GAME", Toast.LENGTH_SHORT).show();
+                TextView text = (TextView) findViewById(R.id.textView3) ;
+                text.setText("TIE GAME ");
                 score=score+5;
             } else if (x < y) {
                 ImageView result = findViewById(R.id.imageView1);
                 result.setImageResource(R.drawable.lose);
-                Toast.makeText(this, "COMPUTER WIN THE GAME", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "COMPUTER WIN THE GAME", Toast.LENGTH_SHORT).show();
+                TextView text = (TextView) findViewById(R.id.textView3) ;
+                text.setText("COMPUTER WIN THE GAME ");
                 score=score-10;
             } else {
                 ImageView result = findViewById(R.id.imageView1);
                 result.setImageResource(R.drawable.win);
-                Toast.makeText(this, "HUMAN WIN THE GAME", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "HUMAN WIN THE GAME", Toast.LENGTH_SHORT).show();
+                TextView text = (TextView) findViewById(R.id.textView3) ;
+                text.setText("HUMAN WIN THE GAME ");
                 score=score+10;
             }
 
         }
         else {
-            Toast.makeText(this, "YOUR SCORE :- "+score, Toast.LENGTH_SHORT).show();
-            Toast.makeText(this, "GAME OVER", Toast.LENGTH_SHORT).show();
-               /* ImageView gameover = findViewById(R.id.imageView1);
-                gameover.setImageResource(R.drawable.gameover);*/
+            /*Toast.makeText(this, "YOUR SCORE :- "+score, Toast.LENGTH_SHORT).show();*/
+            //Toast.makeText(this, "GAME OVER", Toast.LENGTH_SHORT).show();
+            TextView text = (TextView) findViewById(R.id.textView3) ;
+            text.setText("GAME OVER ");
+
         }
         if (count==3)
         {
-            Toast.makeText(this, "YOUR SCORE :-"+score, Toast.LENGTH_LONG).show();
-            Toast.makeText(this, "GAME OVER", Toast.LENGTH_SHORT).show();
+            /*Toast.makeText(this, "YOUR SCORE :-"+score, Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "GAME OVER", Toast.LENGTH_SHORT).show();*/
+
+            TextView text = (TextView) findViewById(R.id.textView3) ;
+            text.setText("YOUR SCORE :"+score+"            GAME OVER");
+
+
             ImageView gameover = findViewById(R.id.imageView1);
             gameover.setImageResource(R.drawable.gameover);
         }
@@ -183,31 +204,43 @@ public class SPS extends AppCompatActivity {
             if (x == y) {
                 ImageView result = findViewById(R.id.imageView1);
                 result.setImageResource(R.drawable.tryss);
-                Toast.makeText(this, "TIE GAME", Toast.LENGTH_SHORT).show();
+
+                //Toast.makeText(this, "TIE GAME", Toast.LENGTH_SHORT).show();
+                TextView text = (TextView) findViewById(R.id.textView3) ;
+                text.setText("TIE GAME");
+
                 score=score+5;
             } else if (x < y) {
                 ImageView result = findViewById(R.id.imageView1);
                 result.setImageResource(R.drawable.lose);
-                Toast.makeText(this, "COMPUTER WIN THE GAME", Toast.LENGTH_SHORT).show();
+               // Toast.makeText(this, "COMPUTER WIN THE GAME", Toast.LENGTH_SHORT).show();
+                TextView text = (TextView) findViewById(R.id.textView3) ;
+                text.setText("COMPUTER WIN THE GAME");
+
                 score=score-10;
             } else {
                 ImageView result = findViewById(R.id.imageView1);
                 result.setImageResource(R.drawable.win);
-                Toast.makeText(this, "HUMAN WIN GAME", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "HUMAN WIN GAME", Toast.LENGTH_SHORT).show();
+                TextView text = (TextView) findViewById(R.id.textView3) ;
+                text.setText("HUMAN WIN THE GAME");
                 score=score+10;
             }
 
         }
         else {
-            Toast.makeText(this, "YOUR SCORE :- "+score, Toast.LENGTH_SHORT).show();
-            Toast.makeText(this, "GAME OVER", Toast.LENGTH_SHORT).show();
-                /*ImageView gameover = findViewById(R.id.imageView1);
-                gameover.setImageResource(R.drawable.gameover);*/
+            /*Toast.makeText(this, "YOUR SCORE :- "+score, Toast.LENGTH_SHORT).show();*/
+            //Toast.makeText(this, "GAME OVER", Toast.LENGTH_SHORT).show();
+            TextView text = (TextView) findViewById(R.id.textView3) ;
+            text.setText("GAME OVER");
         }
         if (count==3)
         {
-            Toast.makeText(this, "YOUR SCORE :-  "+score, Toast.LENGTH_LONG).show();
-           Toast.makeText(this, "GAME OVER", Toast.LENGTH_SHORT).show();
+            /*Toast.makeText(this, "YOUR SCORE :-  "+score, Toast.LENGTH_LONG).show();
+           Toast.makeText(this, "GAME OVER", Toast.LENGTH_SHORT).show();*/
+            TextView text = (TextView) findViewById(R.id.textView3) ;
+            text.setText("YOUR SCORE :"+score+"            GAME OVER");
+
             ImageView gameover = findViewById(R.id.imageView1);
             gameover.setImageResource(R.drawable.gameover);
         }
