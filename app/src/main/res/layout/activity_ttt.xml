@@ -132,23 +132,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.766" />
 
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="110dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="138dp"
-        android:layout_marginEnd="79dp"
-        android:layout_marginBottom="52dp"
-        android:background="@drawable/background"
-        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
-        app:layout_constraintEnd_toStartOf="@+id/button"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="?attr/actionModeCloseDrawable" />
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="294dp"
@@ -162,4 +145,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/tictaktoeheading" />
+
+    <Button
+        android:id="@+id/Home_Button"
+        android:layout_width="114dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="45dp"
+        android:text="Home"
+
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
