@@ -128,12 +128,14 @@ public class flyingFishView extends View {
             lifeCounterFish--;
 
             if(lifeCounterFish == 0){
-                Toast.makeText(getContext(),"Game Over", Toast.LENGTH_SHORT).show();
-                Intent gameOverIntent = new Intent(getContext(),gameOver.class);
+                Toast.makeText(this.getContext(),"Game Over", Toast.LENGTH_SHORT).show();
+                Intent gameOverIntent = new Intent(getContext(), gameOver.class);
                 gameOverIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
 
                 gameOverIntent.putExtra("score",score);
                 getContext().startActivity(gameOverIntent);
+
+
             }
         }
 
