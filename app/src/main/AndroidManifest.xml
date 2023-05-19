@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MultiOne"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".FlappyFish"
             android:exported="false" />
         <activity
@@ -25,7 +28,7 @@
             android:name=".SPS"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Start_Screen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
